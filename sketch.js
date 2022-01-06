@@ -32,17 +32,17 @@ function setup() {
                                         
   reverb = new p5.Reverb();
   reverb.process(ticMin, 6, 0, false);
-  low = new p5.LowPass();
-  reverb.disconnect();
-  reverb.connect(low);  
+  //low = new p5.LowPass();
+  //reverb.disconnect();
+  //reverb.connect(low);  
 }
 
 function draw() {
   //---------------------------sezione di filtro col mouse
                                       
-  filterFreq = map(mouseX, 0, width, 10, 22050);
-  filterRes = map(mouseY, 0, height, 15, 5);
-  low.set(filterFreq, filterRes);
+  //filterFreq = map(mouseX, 0, width, 10, 22050);
+  //filterRes = map(mouseY, 0, height, 15, 5);
+  //low.set(filterFreq, filterRes);
   //--------------------------line, colore random
   let str = random(1, 20);
   
