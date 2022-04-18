@@ -24,7 +24,7 @@ function windowResized() {
 }  
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background(0);
+  background(5);
   frameRate(15);
   
   
